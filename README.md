@@ -10,3 +10,10 @@ The only things that had to be changed after creating the app using `activator n
 * `app/controllers/Application.java`
 * `app/views/*`
 * `/conf/routes`
+
+## Adding bootstrap
+
+See http://www.webjars.org/documentation to start out, but then look at my commit, to see exactly what I changed. I also
+used a little bit of the tutorial here http://thomastoye.be/webdevelopment/making-bootstrap-3-dot-1-x-play-nicely-with-play-framework-2-dot-2-x/
+
+I'll make a write up soon and then update this file
