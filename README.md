@@ -13,7 +13,7 @@ The only things that had to be changed after creating the app using `activator n
 
 ## Adding bootstrap
 
-See http://www.webjars.org/documentation to start out, but then look at my commit, to see exactly what I changed. I also
+See http://www.webjars.org/documentation to start out, but then look at [my commit](https://github.com/kjorg50/play-2.3-hello-world/commit/680bd8cf2e49f34abd1c558ce5df04ce59354ae1), to see exactly what I changed. I also
 used a little bit of the tutorial here http://thomastoye.be/webdevelopment/making-bootstrap-3-dot-1-x-play-nicely-with-play-framework-2-dot-2-x/
 
 I'll make a write up soon and then update this file
