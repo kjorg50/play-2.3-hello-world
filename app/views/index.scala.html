@@ -2,15 +2,15 @@
 
 @import helper._
 
-
+@implicitField = @{ FieldConstructor(bootstrapFieldConstructorTemplate.f) }
 
 @main("Hello World Demo") {
 
     <h1>Configure your 'Hello world':</h1>
 
-    @form(action = routes.Application.sayHello, args = 'id -> "helloform") {
+    @helper.form(action = routes.Application.sayHello, args = 'id -> "helloform") {
 
-        @inputText(
+        @helper.inputText(
             field = helloForm("name"),
             args = '_label -> "What's your name?", 'placeholder -> "World"
         )
