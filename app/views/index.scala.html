@@ -8,16 +8,16 @@
 
     <h1>Configure your 'Hello world':</h1>
 
-    @helper.form(action = routes.Application.sayHello, args = 'id -> "helloform") {
+    @form(action = routes.Application.sayHello, args = 'id -> "helloform") {
 
-        @helper.inputText(
+        @inputText(
             field = helloForm("name"),
-            args = '_label -> "What's your name?", 'placeholder -> "World"
+            args = '_label -> "What's your name?", 'placeholder -> "World", 'class -> "form-control"
         )
 
         @inputText(
             field = helloForm("repeat"),
-            args = '_label -> "How many times?", 'size -> 3, 'placeholder -> 10
+            args = '_label -> "How many times?", 'size -> 3, 'placeholder -> 10, 'class -> "form-control"
         )
 
         @select(
@@ -28,12 +28,10 @@
                 "green" -> "Green",
                 "blue" -> "Blue"
             ),
-            args = '_label -> "Choose a color"
+            args = '_label -> "Choose a color", 'class -> "form-control"
         )
 
-        <p class="buttons">
-            <input type="submit">
-        <p>
+        <button type="submit" class="btn btn-primary">Submit</button>
 
     }
 
