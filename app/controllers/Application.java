@@ -16,6 +16,8 @@ public class Application extends Controller {
         @Required public String name;
         @Required @Min(1) @Max(100) public Integer repeat;
         public String color;
+        public Boolean box1;
+        public Boolean box2;
     }
 
     public static Result index() {
@@ -31,6 +33,8 @@ public class Application extends Controller {
             return badRequest(index.render(form));
         } else {
             Hello data = form.get();
+            Logger.debug("Box 1 was " + data.box1);
+            Logger.debug("Box 2 was " + data.box2);
             return ok(
                     hello.render(data.name, data.repeat, data.color)
             );
